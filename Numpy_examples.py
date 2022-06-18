@@ -69,3 +69,22 @@ mat1 = np.arange(1,26).reshape(5,5)
 print(mat1[3:5,:])
 print('\n')
 
+#3 Now make as told with mat2
+mat2 = np.arange(1,26).reshape(5,5)
+print(mat2)
+print('\n')
+
+#Sum all items from mat2
+i = 0
+j = 0
+sum_mat2 = 0
+for i in range(5):
+    for j in range(5):
+        sum_mat2 = sum_mat2 + mat2[i][j]
+print(sum_mat2)
+
+#Calculate the standard deviation
+print(np.std(mat2))
+
+#Calculate the sum of all columns
+print(mat2.sum(axis=0))
